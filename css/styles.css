@@ -6,67 +6,46 @@ body {
     padding: 0;
     background-color: #000; 
 }
-.slide {
-    width: 100%;
-    height: 100vh;
-}
-header {
-    text-align: center;
-}
-
-header,
-section {
-    height: 50vh;
+.header {
+    overflow: hidden;
 }
 .myPhoto {
     width: 35%;
     height: 100%;
-    background: url(myPhoto/I2.png) no-repeat;
+    background: url(../myPhoto/I2.png) no-repeat;
     background-size: 100% auto;
     background-position: left bottom;
-
-
 }
 .asteroid-stage {
-    position: absolute;
-    z-index: -1;
-    width: 50%;
-    max-width: 60vh;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-bottom: 100%;
     perspective: 600px;
-}
-.asteroid-stage:after {
-    content: "";
-    padding-top: 100%;
-    display: block;
 }
 .asteroid {
     position: absolute;
-    background: url(images/asteroid.png) no-repeat;
+    background: url(../images/asteroid.png) no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 100%;
-    transform: rotateX(30deg) scaleX(1.2);
+    background-position: center center;
+    /* 70% оптимальное значение, гипотенуза не будет больше width usera */
+    width: 70%; 
+    height: 70%;
+    top:15%;
+    left:15%;
     animation: 60s linear infinite rotateAsteroids;
 }
 .breakBg {
-    display: inline-block;
-    position: relative;
+    position: absolute;
+    width: 50%;
+    top:25%;
+    left:25%;
     /* Статика */
     /* width: 651px;
     height: 651px; */
     /* Статика */
-
-    width: 40%;
-    max-width: 50vh;
     border-radius: 50%;
-    border: 3px dashed orange;
     overflow: hidden; /*clearfix*/
-    background: url(images/breakBg2.png) no-repeat;
+    background: url(../images/breakBg2.png) no-repeat;
     background-size: 100% 100%;
-
-    animation: svechenie 10s infinite;
+    animation: 10s ease-in-out infinite alternate svechenie ;
 }
 /*For height=width*/
 .breakBg:after{
@@ -125,41 +104,41 @@ section {
 }
 .side-front {
     /* transform: translateZ(108px); */
-    background: url(myPhoto/borodach.jpg) no-repeat;
+    background: url(../myPhoto/borodach.jpg) no-repeat;
     background-size: auto 100%;
 }
 .side-back {
     /* transform: rotateY(180deg) rotateZ(0deg) translateZ(108px); */
     transform: rotateY(180deg);
-    background: url(myPhoto/bowlingWithMyFriends1.jpg) no-repeat;
+    background: url(../myPhoto/bowlingWithMyFriends1.jpg) no-repeat;
     background-size: auto 100%;
 }
 .side-left {
     transform-origin: 0 center;
     transform: rotateY(-90deg); 
     /* transform: rotateY(-90deg) translateZ(108px); */
-    background: url(myPhoto/autumn.jpg) no-repeat;
+    background: url(../myPhoto/autumn.jpg) no-repeat;
     background-size: auto 100%;
 }
 .side-right {
     transform-origin: 100% center;
     transform: rotateY(90deg); 
     /* transform: rotateY(90deg) translateZ(108px); */
-    background: url(myPhoto/spbIsMy.jpg) no-repeat;
+    background: url(../myPhoto/spbIsMy.jpg) no-repeat;
     background-size: auto 100%;
 }
 .side-top {
     transform-origin: center 100%;
     transform: rotateX(-90deg); 
     /* transform: rotateX(90deg) translateZ(108px); */
-    background: url(myPhoto/pairOfEyes.jpg) no-repeat;
+    background: url(../myPhoto/pairOfEyes.jpg) no-repeat;
     background-size: 100% 100%;
 }
 .side-bottom {
     transform-origin: center 0%;
     transform: rotateX(90deg); 
     /* transform: rotateX(-90deg) translateZ(108px); */
-    background: url(myPhoto/skatingRing.jpg) no-repeat;
+    background: url(../myPhoto/skatingRing.jpg) no-repeat;
     background-size: auto 100%;
 }
 /* Animation cube */
@@ -200,17 +179,26 @@ section {
 /* Animation asteroids */
 @keyframes rotateAsteroids {
     from {
-        transform: rotateX(45deg) scaleX(1.2) rotateZ(0);
+        transform: rotateX(45deg) scaleX(1.1) scaleY(1.1) rotateZ(0);
     }
     to {
-        transform: rotateX(45deg) scaleX(1.2) rotateZ(360deg);
+        transform: rotateX(45deg) scaleX(1.1) scaleY(1.1) rotateZ(360deg);
     }
 }
 @keyframes svechenie {
     from {
-        box-shadow: 0 0 20px 0 white;
+        box-shadow: 0 0 20px 0 rgb(108, 34, 8);
+    }
+    25% {
+        box-shadow: 0 0 20px 0 rgb(247, 196, 70);
+    }
+    50% {
+        box-shadow: 0 0 20px 0 rgb(174,189,126);
+    }
+    75% {
+        box-shadow: 0 0 20px 0 rgb(148,124,122);
     }
     to {
-        box-shadow: 0 0 20px 0 black;
+        box-shadow: 0 0 20px 0 rgb(27,74,115);
     }
 }
