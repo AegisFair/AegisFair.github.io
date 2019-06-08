@@ -1,6 +1,7 @@
 /*  
     Connecting
     Header
+    Main-content
 
 */
 /* Connecting */
@@ -152,3 +153,15 @@
             animation: 10s ease-in-out infinite alternate svechenie ;
             border-radius: 50%;
         }
+/* Main-content */
+.main-content {
+    background: url(../images/bg/pattern_bg_cell.png);
+    height: 100vh;/*В качестве теста*/
+}
+.main-content h2{
+    text-align: center;
+    color: white;
+}
+.main-content .header {
+    border-radius: 0 0 35% 35%;
+}
