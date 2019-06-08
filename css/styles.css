@@ -135,6 +135,7 @@
         }
     .socials {
         padding: 25px 0;
+        text-align: center;
     }
     .socials .columns {
         margin-left: 4%;
@@ -146,6 +147,8 @@
         width: 22%;
     }
         .socials object {
-            width: 100%;
+            width: 70%;
             vertical-align: middle;
+            animation: 10s ease-in-out infinite alternate svechenie ;
+            border-radius: 50%;
         }

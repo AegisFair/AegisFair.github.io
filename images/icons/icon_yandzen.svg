@@ -1,3 +1,4 @@
+<?xml-stylesheet type="text/css" href="/css/svg_style.css">
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.2" width="117.12mm" height="116.42mm" viewBox="0 0 11712 11642" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" 
@@ -7,10 +8,6 @@
     xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" 
     xmlns:smil="http://www.w3.org/2001/SMIL20/" 
     xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
-    <style>
-        .backlayot{fill:#fff;}
-        .mainlayot{fill:#000;}
-    </style>
     <defs class="ClipPathGroup">
         <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
             <rect x="0" y="0" width="11712" height="11642"/>
@@ -66,7 +63,7 @@
         <g class="SlideGroup">
             <g>
                 <g id="container-id1">
-                    <g id="id1" class="Slide" clip-path="url(#presentation_clip_path)">
+                    <g id="id1" class="Slide socialMediaIcon" clip-path="url(#presentation_clip_path)">
                         <g class="Page">
                             <g class="Group">
                                 <g class="com.sun.star.drawing.ClosedBezierShape">
