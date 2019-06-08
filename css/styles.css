@@ -6,13 +6,6 @@
     overflow: hidden;
     background-color: #000;
 }
-.myPhoto {
-    width: 35%;
-    height: 100%;
-    background: url(../myPhoto/I2.png) no-repeat;
-    background-size: 100% auto;
-    background-position: left bottom;
-}
 .asteroid-stage {
     padding-bottom: 100%;
     perspective: 600px;
@@ -22,6 +15,7 @@
     background: url(../images/asteroid.png) no-repeat;
     background-size: contain;
     background-position: center center;
+    z-index: -1;
     /* 70% оптимальное значение, гипотенуза не будет больше width usera */
     width: 70%; 
     height: 70%;
