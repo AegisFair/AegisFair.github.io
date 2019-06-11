@@ -151,9 +151,6 @@
             vertical-align: middle;
             animation: 10s ease-in-out infinite alternate svechenie ;
             border-radius: 50%;
-<<<<<<< Updated upstream
-        }
-=======
         }
 /* Main-content */
 .main-content {
@@ -195,4 +192,3 @@
     padding-top: 5%;
     color: white;
 }
->>>>>>> Stashed changes
