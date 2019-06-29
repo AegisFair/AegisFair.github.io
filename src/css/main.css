@@ -4825,7 +4825,15 @@ html {
 /*Header*/
 /*Main-content*/
 /****/
+body {
+  min-width: 320px;
+}
+
 /* Header */
+.s {
+  /* Main-content */
+}
+
 .s-header {
   background-color: #000;
 }
@@ -4982,19 +4990,43 @@ html {
   -webkit-animation: 10s ease-in-out infinite alternate svechenie;
           animation: 10s ease-in-out infinite alternate svechenie;
   border-radius: 50%;
-  /* Main-content */
 }
 
-.s-header .socials object-content {
+.s-content {
   background: url(../images/bg/pattern_bg_cell.png);
-  height: 100vh;
 }
 
-.s-header .socials object-content .h2 {
-  text-align: center;
+.s-content .h2 {
   color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #000;
+  border-radius: 0 0 35% 35%;
 }
 
-.s-header .socials object-content .header {
-  border-radius: 0 0 35% 35%;
+.s-content .header {
+  text-align: center;
+}
+
+.s-content .previews a {
+  display: block;
+}
+
+.s-content .preview {
+  -webkit-box-shadow: 0 0 0 2px white;
+          box-shadow: 0 0 0 2px white;
+  width: 100%;
+  margin: 20px 0;
+  padding-bottom: 56.25%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.MyCompany {
+  background-image: url("/myProjects/MyCompany/preview.png");
+}
+
+.SMitler {
+  background-image: url("/myProjects/smitler/preview.png");
 }

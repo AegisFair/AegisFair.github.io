@@ -1,4 +1,6 @@
 /dontCopy/
+/myProjects/**/libs
+/myProjects/**/sass
 /node_modules/
 # /dist/
 /.git/
