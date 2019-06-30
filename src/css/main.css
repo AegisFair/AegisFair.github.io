@@ -4807,10 +4807,16 @@ html {
 
 .socialMediaIcon .backlayot {
   fill: #fff;
+  -webkit-transition: fill 1s ease;
+  -o-transition: fill 1s ease;
+  transition: fill 1s ease;
 }
 
 .socialMediaIcon .mainlayot {
   fill: #000;
+  -webkit-transition: fill .3s ease;
+  -o-transition: fill .3s ease;
+  transition: fill .3s ease;
 }
 
 .socialMediaIcon:hover .backlayot {
