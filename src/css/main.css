@@ -5043,13 +5043,22 @@ body {
 
 .s-content .previews a {
   display: block;
+  border: 1px solid white;
+  margin: 20px 0;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: .6;
+}
+
+.s-content .previews a:hover {
+  -webkit-box-shadow: 0 0 5px 0 white;
+          box-shadow: 0 0 5px 0 white;
+  opacity: 1;
 }
 
 .s-content .preview {
-  -webkit-box-shadow: 0 0 0 2px white;
-          box-shadow: 0 0 0 2px white;
   width: 100%;
-  margin: 20px 0;
   padding-bottom: 56.25%;
   background-size: contain;
   background-position: center;
