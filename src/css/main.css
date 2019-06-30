@@ -4821,6 +4821,33 @@ html {
   fill: #fff;
 }
 
+.copyrights {
+  position: fixed;
+  z-index: 1000;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  left: 0;
+  bottom: 25px;
+  padding: 10px 20px;
+  border: 5px solid transparent;
+  border-left: none;
+  color: rgba(255, 172, 69, 0.9);
+  -webkit-border-image: 5 repeating-linear-gradient(45deg, #fcac45, #fcac45 10px, transparent 10px, transparent 20px, #222222 20px, #222222 30px, transparent 30px, transparent 40px);
+       -o-border-image: 5 -o-repeating-linear-gradient(45deg, #fcac45, #fcac45 10px, transparent 10px, transparent 20px, #222222 20px, #222222 30px, transparent 30px, transparent 40px);
+          border-image: 5 repeating-linear-gradient(45deg, #fcac45, #fcac45 10px, transparent 10px, transparent 20px, #222222 20px, #222222 30px, transparent 30px, transparent 40px);
+  opacity: .3;
+  -webkit-transition: opacity .5s ease;
+  -o-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+.copyrights:hover {
+  opacity: 1;
+}
+
+.copyrights_link {
+  display: block;
+}
+
 /****/
 /*Header*/
 /*Main-content*/
