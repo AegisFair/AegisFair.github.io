@@ -3,7 +3,7 @@
 @import "vars"
 // @import "libs"
 @import "animation"
-// @import "svg_style"
+@import "svg_style"
 @import "copyrights"
 /****/
     //Header
@@ -147,6 +147,14 @@
             margin: 0
         .header 
             text-align: center
+            border-top: $defaultSizeBorder solid white
+            &__text
+                border-left: $defaultSizeBorder solid white
+                border-bottom: $defaultSizeBorder solid white
+                border-right: $defaultSizeBorder solid white
+                position: relative
+                top: -$defaultSizeBorder
+         
         .previews
             a
                 display: block
@@ -171,4 +179,4 @@
 .denga
     background-image: url($denga)
 .JSchool
-        background-image: url($jSchool)
+    background-image: url($jSchool)
