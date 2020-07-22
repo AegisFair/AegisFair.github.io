@@ -147,13 +147,15 @@
             margin: 0
         .header 
             text-align: center
-            border-top: $defaultSizeBorder solid white
+            border-top: $defaultSizeBorder $defaultStyleBorder
+            animation: 10s ease-in-out infinite alternate svechenie-border
             &__text
-                border-left: $defaultSizeBorder solid white
-                border-bottom: $defaultSizeBorder solid white
-                border-right: $defaultSizeBorder solid white
+                border-left: $defaultSizeBorder $defaultStyleBorder
+                border-bottom: $defaultSizeBorder $defaultStyleBorder
+                border-right: $defaultSizeBorder $defaultStyleBorder
                 position: relative
                 top: -$defaultSizeBorder
+                animation: 10s ease-in-out infinite alternate svechenie-border
          
         .previews
             a
