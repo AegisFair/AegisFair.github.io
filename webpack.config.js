@@ -57,11 +57,32 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                loader: 'file-loader',
-                options: {
-                    outputPath: 'images',
-                    name:'[name].[ext]'
-                },
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'images',
+                            name: '[folder]/[name].[ext]'
+                        }
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            pngquant: {
+                                quality: [0.65, 0.90],
+                                speed: 4
+                            },
+                            gifsicle: {
+                                optimizationLevel: 2,
+                                enabled:false
+                            },
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 75
+                            },
+                        }
+                    }
+                ]
             },
         ]
     },
